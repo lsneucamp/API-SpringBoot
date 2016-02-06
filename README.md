@@ -1,4 +1,4 @@
-# API-Logistica-SpringBoot
+# API-SpringBoot
 
 ## Motivação
 Esta API foi desenvolvida usando o Spring-boot, uma ferramenta da longa lista de ferramentas do Spring Framework.
@@ -17,7 +17,7 @@ Para Executar esse projeto é necessário ter instalado as seguintes ferramentas
 * 
 O arquivo de configuração está em:
 ```
-API-Logistica-NodeJS-Express/
+API-SpringBoot/
   |- src/
   |  |- main/
   |  |  |- resources
