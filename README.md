@@ -1,15 +1,5 @@
 # API-SpringBoot
 
-## Motivação
-Esta API foi desenvolvida usando o Spring-boot, uma ferramenta da longa lista de ferramentas do Spring Framework.
-Bom, sou desenvolvedor Java Senior, deste de 2008, minha experiência com Java vai deste da definição da Arquitetura do Projeto até sua distribuição na Nuvem, usando a plataforma de nuvem da Google ou da Amazon.
-
-Recentemente uso quase que exclusivamente Java para desenvolvimento de REST API usando o Spring, tenho bastante facilidade e uma boa noção para arquitetar e desenvolver API de fácil escabilidade e elasticidade na nuvem.
-Nesse projeto usei as boas práticas de desenvolvimento de REST API.Todas as camadas (Respository, Service, Controllers) têm teste escrito usando também mistura boas práticas de teste TDD e BDD.
-
-Esta API tem as funções da API NodeJS, afim que sejam compatíveis com o Webapp desenvolvido para este teste.
-A intenção era desenvolver os 3 projetos paralelamente afim que pudesse mostrar como foi implementado cada recurso em cada plataforma.
-
 Para Executar esse projeto é necessário ter instalado as seguintes ferramentas:
 * Java 8 JDK
 * Maven 3
