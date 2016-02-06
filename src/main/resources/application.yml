@@ -1,0 +1,74 @@
+# SPRING ACTIVE PROFILE
+spring:
+  profiles.active: test
+
+---
+# SPRING PRODUCTION PROFILE
+spring:
+  profiles: prod
+  data:
+    # MongoDB configuration
+    mongodb:
+      host: localhost
+      port: 27017
+      database: logistica_prod
+      uri: mongodb://localhost/logistica_prod
+
+# Logging Configuration
+logging:
+  level:
+    co.lsnbox: INFO
+    org.springframework.data.mongodb: INFO
+---
+# SPRING DEVELOPMENT PROFILE
+spring:
+  profiles: dev
+  data:
+    # MongoDB configuration
+    mongodb:
+      host: localhost
+      port: 27017
+      database: logistica_dev
+      uri: mongodb://localhost/logistica_dev
+
+# Logging Configuration
+logging:
+  level:
+    co.lsnbox: DEBUG
+    org.springframework.data.mongodb: DEBUG
+
+swagger:
+    title: test API
+    description: test applications and beyond!
+    version: 0.0.1
+    termsOfServiceUrl:  http://lsnbox.co
+    contact:
+    license: Apache 2.0
+    licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html
+
+---
+# SPRING TEST PROFILE
+spring:
+  profiles: test
+  data:
+    # MongoDB configuration
+    mongodb:
+      host: localhost
+      port: 27017
+      database: logistica_test
+      uri: mongodb://localhost/logistica_test
+
+# Logging Configuration
+logging:
+  level:
+    co.lsnbox: DEBUG
+    org.springframework.data.mongodb: DEBUG
+
+swagger:
+    title: test API
+    description: test applications and beyond!
+    version: 0.0.1
+    termsOfServiceUrl: http://lsnbox.co
+    contact:
+    license: Apache 2.0
+    licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html

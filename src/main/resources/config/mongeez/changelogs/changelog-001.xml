@@ -1,0 +1,85 @@
+<mongoChangeLog>
+    <changeSet changeId="ChangeSet-001" author="lucianoneucamp@gmail.com">
+        <!-- create and insert nodes initial data -->
+        <script>
+            db.nodes.insert(
+            [{"_id": ObjectId("54f6612bb0e6af1800b5d00A"), "name": "A"},
+            {"_id": ObjectId("54f6612bb0e6af1800b5d00B"), "name": "B"},
+            {"_id": ObjectId("54f6612bb0e6af1800b5d00C"), "name": "C"},
+            {"_id": ObjectId("54f6612bb0e6af1800b5d00D"), "name": "D"},
+            {"_id": ObjectId("54f6612bb0e6af1800b5d00E"), "name": "E"}]);
+        </script>
+        <!-- create and insert edges initial data-->
+        <script>
+
+            db.edges.insert(
+            [{"_id": ObjectId("54f6612bb0e6af1800b5dE0A"),
+            "nodeA" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00A")
+            },
+            "nodeB" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00B")
+            },
+            distance: 10
+            },
+            {"_id": ObjectId("54f6612bb0e6af1800b5dE0B"),
+            "nodeA" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00B")
+            },
+            "nodeB" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00D")
+            },
+            distance: 15
+            },
+            {"_id": ObjectId("54f6612bb0e6af1800b5dE0C"),
+            "nodeA" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00A")
+            },
+            "nodeB" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00C")
+            },
+            distance: 20
+            },
+            {"_id": ObjectId("54f6612bb0e6af1800b5dE0D"),
+            "nodeA" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00C")
+            },
+            "nodeB" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00D")
+            },
+            distance: 30
+            },
+            {"_id": ObjectId("54f6612bb0e6af1800b5dE0E"),
+            "nodeA" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00B")
+            },
+            "nodeB" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00E")
+            },
+            distance: 50
+            },
+            {"_id": ObjectId("54f6612bb0e6af1800b5dE0F"),
+            "nodeA" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00D")
+            },
+            "nodeB" : {
+            "$ref" : "nodes",
+            "$id" : ObjectId("54f6612bb0e6af1800b5d00E")
+            },
+            distance: 30
+            }]
+            );
+        </script>
+    </changeSet>
+</mongoChangeLog>
